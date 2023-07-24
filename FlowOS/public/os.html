@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="manifest" href="manifest.json" />
+		<link rel="preconnect" href="https://www.gstatic.com" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-touch-fullscreen" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="FlowOS" />
+		<link rel="apple-touch-icon" href="/assets/flow-logo.png" />
+		<meta name="apple-touch-startup-image" content="/assets/logo.svg" />
+
+		<meta name="theme-color" content="#000000" />
+		<meta name="description" content="The customizable webOS.">
+
+		<link rel="icon" href="/assets/logo.svg" />
+		<link rel="favicon" href="/assets/logo.svg" />
+
+		<title>FlowOS</title>
+
+		<link rel="stylesheet" href="/styles/style.css" />
+
+		<link rel="modulepreload" href="index.js" />
+	</head>
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-3RNYBG5J74"></script>
+	<script>
+  		window.dataLayer = window.dataLayer || [];
+  		function gtag(){dataLayer.push(arguments);}
+  		gtag('js', new Date());
+
+  		gtag('config', 'G-3RNYBG5J74');
+	</script>
+
+	<body>
+		<div class="boot">
+			<main>
+				<img src="/assets/logo.svg" width="100px" height="100px" class="logo" alt="Flow Works Logo" />
+
+				<div class="progress-bar" style="margin-top: 20px">
+					<div class="progress-bar-value"></div>
+				</div>
+			</main>
+		</div>
+
+		<div class="bar"></div>
+
+		<div class="app-switcher">
+			<input class="searchbar" placeholder="Search apps..."/>
+			<ul class="apps"></ul>
+		</div>
+		<!--
+		<script src="https://cdn.jsdelivr.net/npm/winbox/dist/winbox.bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/hotkeys-js/dist/hotkeys.min.js"></script>
+		<script src="/scripts/handler.js" defer></script>
+		<script src="/scripts/classes.js" defer></script>
+		<script src="/scripts/utils.js" defer></script>
+		<script src="/uv/uv.config.js" defer></script>
+		-->
+		<script>
+			;(function () {
+    			var src = '//cdn.jsdelivr.net/npm/eruda';
+    			if (!/eruda=true/.test(window.location) && localStorage.getItem('active-eruda') != 'true') return;
+    			document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+    			document.write('<scr' + 'ipt>eruda.init();</scr' + 'ipt>');
+			})();
+		</script>
+		<script src="/index.js" type="module" defer></script>
+	</body>
+</html>
