@@ -1,7 +1,5 @@
 <div align="center">
-	<a href="https://github.com/Flow-Works/FlowOS">
-		<img src="https://raw.githubusercontent.com/Flow-Works/FlowOS/main/FlowOS/public/assets/logo.svg" width="100px">
-	</a>
+	<img src="/FlowOS/public/assets/logo.png" width="100px">
 	<h3 align="center">Flow OS</h3>
 	<p align="center">
 		The customizable webOS.
